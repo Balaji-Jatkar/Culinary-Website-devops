@@ -2,14 +2,6 @@ pipeline {
   agent any
 
   stages {
-    stage('Checkout') {
-      steps {
-        git branch: 'main',
-            credentialsId: 'github-creds',
-            url: 'https://github.com/Balaji-Jatkar/Culinary-Website'
-      }
-    }
-
     stage('Build Docker Image') {
       steps {
         sh 'docker build -t culinary-website:latest .'

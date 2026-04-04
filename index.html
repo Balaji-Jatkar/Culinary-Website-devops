@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CookBook - Anybody Can Cook</title>
+  <link rel="stylesheet" href="">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Garamond', sans-serif;
+      line-height: 1.6;
+    }
+    header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), 
+              url("image assets/banner.jpeg") no-repeat center/cover;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+    header nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: orange;
+      font-weight: 800;
+      margin: 1rem 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 1rem;
+    }
+    header input[type="text"] {
+      padding: 0.5rem;
+      width: 60%;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .category {
+      text-align: center;
+    }
+    .category img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+    .popular-recipes, .dont-miss {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .recipe-card {
+      flex: 1 1 250px;
+    }
+    .recipe-card img {
+      width: 250px;
+      
+      border-radius: 10px;
+    }
+    .why-section p {
+      margin-bottom: 0.5rem;
+    }
+    .footer {
+      background: #f4f4f4;
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .footer .about {
+      max-width: 400px;
+    }
+    .footer ul {
+      list-style: none;
+    }
+    .footer li {
+      margin-bottom: 0.5rem;
+    }
+    .footer img {
+      width: 75px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">RECIPES</a>
+      <a href="#">COLLECTIONS</a>
+      <a href="#">ABOUT US</a>
+    </nav>
+    <h1>ANYBODY CAN COOK</h1>
+    <p>Explore a world of culinary inspiration and savour the joy of cooking with our diverse collection of mouthwatering recipes.</p>
+    <input type="text" placeholder="Search our recipes...">
+  </header>
+
+  <section class="section">
+    <h2>OUR RECIPES</h2>
+    <div class="categories">
+      <div class="category"><img src="image assets/quick.jpg" alt="Quick"><p>Quick & Easy</p></div>
+      <div class="category"><img src="image assets/veg.jpg" alt="Veg"><p>Vegetarian</p></div>
+      <div class="category"><img src="image assets/bbq.jpg" alt="BBQ"><p>Grilling & BBQ</p></div>
+      <div class="category"><img src="image assets/healthy.jpg" alt="Healthy"><p>Healthy</p></div>
+      <div class="category"><img src="image assets/soup.jpg" alt="Soups"><p>Soups</p></div>
+      <div class="category"><img src="image assets/dessert.jpg" alt="Desserts"><p>Desserts</p></div>
+      <div class="category"><img src="image assets/dinner.jpg" alt="Dinner"><p>Dinner</p></div>
+      <div class="category"><img src="image assets/appetizer.jpg" alt="Appetizers"><p>Appetizers</p></div>
+      <div class="category"><img src="image assets/drinks.jpg" alt="Drinks"><p>Drinks</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>The Most Popular Recipes</h2>
+    <div class="popular-recipes">
+      <div class="recipe-card">
+        <img src="image assets/makhni.jpg" alt="Chicken Makhni">
+        <p><strong>Chicken Makhni:</strong> A masterpiece of creamy, buttery bliss, where tender chicken is enveloped in a rich, velvety tomato sauce infused with the subtle nuances of Indian spices.</p>
+      </div>
+      <div class="recipe-card">
+        <img src="image assets/drinks.jpg" alt="Jigarthanda">
+        <p><strong>Jigarthanda:</strong> A sweet, milky drink with combination of Annari syrup and icecream topped with almond which satisfies any sweet cravings.</p>
+      </div>
+      <div class="recipe-card">
+        <img src="image assets/thali.png" alt="Veg thali">
+        <p><strong>Veg Thali:</strong> A savoury dish with multiple elements cooked to perfection.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section why-section">
+    <h2>WHY COOKBOOK?</h2>
+    <p><strong>Tasty Recipes:</strong> Find yummy recipes for all occasions.</p>
+    <p><strong>Easy Steps:</strong> Simple instructions for stress-free cooking.</p>
+    <p><strong>Foodie Friends:</strong> Connect with other food lovers like you!</p>
+  </section>
+
+  <section class="section">
+    <h2>DON'T MISS</h2>
+    <div class="dont-miss">
+      <div class="recipe-card">
+        <img src="image assets/international.jpg" alt="International">
+        <p><strong>International Cuisine</strong></p>
+      </div>
+      <div class="recipe-card">
+        <img src="image assets/biryani.webp" alt="Biryani">
+        <p><strong>Best Biryani Recipes</strong></p>
+      </div>
+      <div class="recipe-card">
+        <img src="image assets/lunchbox.jpg" alt="Lunch">
+        <p><strong>Lunch Ideas for Kids</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="about">
+      <h3>About Us</h3>
+      <p>Our mission at CookBook is to make everyday cooking fun and meaningful by sharing recipes and cooking tips to bring people together.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/App_Store_%28iOS%29.svg" alt="App Store">
+    </div>
+    <div>
+      <h3>Learn More</h3>
+      <ul>
+        <li><a href="#">CookBook Community</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

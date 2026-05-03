@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/YOURUSERNAME/YOURREPO.git'
+                git branch: 'main', url: 'https://github.com/Balaji-Jatkar/Culinary-Website-devops.git'
                 echo 'Code downloaded from Git'
             }
         }
